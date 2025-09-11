@@ -1,11 +1,12 @@
-import ExperienceSection from "@/components/ExperienceSection";
 import SkillsSection from "@/components/SkillsSection";
+import EducationSection from "@/components/EducationSection";
+import AchievementsSection from "@/components/AchievementsSection";
 import MainLayout from "@/layouts/MainLayout";
 import { AboutProps } from "@/types";
 import { Head } from "@inertiajs/react";
 
 
-export default function About({ personal_info, skills, experience }: AboutProps) {
+export default function About({ personal_info, skills, education, achievements }: AboutProps) {
     return (
         <MainLayout>
             <Head title="About" />
@@ -18,23 +19,13 @@ export default function About({ personal_info, skills, experience }: AboutProps)
                         </h2>
                         <div className="mt-8 max-w-3xl mx-auto">
                             <p className="text-lg text-gray-500">{personal_info.bio}</p>
-                            <div className="mt-8 flex justify-center">
-                                <a
-                                    href={personal_info.resume_url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition-colors"
-                                >
-                                    Download Resume
-                                </a>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <EducationSection education={education} />
+            <AchievementsSection achievements={achievements} />
             <SkillsSection skills={skills} />
-            <ExperienceSection experience={experience} />
         </MainLayout>
     );
 }

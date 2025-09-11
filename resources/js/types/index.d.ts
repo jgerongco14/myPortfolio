@@ -18,6 +18,11 @@ export interface HeroData {
     avatar: string;
 }
 
+export interface CareerData {   
+    description: string;
+    resume_url: string;
+}
+
 export interface Project {
     id: number;
     title: string;
@@ -33,12 +38,12 @@ export interface PersonalInfo {
     bio: string;
     location: string;
     email: string;
-    resume_url: string;
 }
 
 export interface Skill {
     name: string;
     level: number;
+    logo?: string;
 }
 
 export interface SkillCategory {
@@ -51,6 +56,21 @@ export interface Experience {
     period: string;
     description: string;
     technologies: string[];
+}
+
+export interface Education {
+    degree: string;
+    institution: string;
+    period: string;
+    description: string;
+    achievements: string[];
+}
+
+export interface Achievement {
+    title: string;
+    year: string;
+    description: string;
+    category: string;
 }
 
 export interface ContactInfo {
@@ -76,12 +96,17 @@ export interface PageProps {
 
 export interface HomeProps extends PageProps {
     hero: HeroData;
-    featured_projects: Project[];
+    career: CareerData;
 }
 
 export interface AboutProps extends PageProps {
     personal_info: PersonalInfo;
     skills: SkillCategory;
+    education: Education[];
+    achievements: Achievement[];
+}
+
+export interface ExperienceProps extends PageProps {
     experience: Experience[];
 }
 

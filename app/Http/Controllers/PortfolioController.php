@@ -19,7 +19,7 @@ class PortfolioController extends Controller
     {
         return Inertia::render('Home', [
             'hero' => $this->portfolioService->getHeroData(),
-            'featured_projects' => $this->portfolioService->getFeaturedProjects(),
+            'career' => $this->portfolioService->getCareerData(),
         ]);
     }
 
@@ -28,6 +28,14 @@ class PortfolioController extends Controller
         return Inertia::render('About', [
             'personal_info' => $this->portfolioService->getPersonalInfo(),
             'skills' => $this->portfolioService->getSkills(),
+            'education' => $this->portfolioService->getEducation(),
+            'achievements' => $this->portfolioService->getAchievements(),
+        ]);
+    }
+
+    public function experience(): Response
+    {
+        return Inertia::render('Experience', [
             'experience' => $this->portfolioService->getExperience(),
         ]);
     }

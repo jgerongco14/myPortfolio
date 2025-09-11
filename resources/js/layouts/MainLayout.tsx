@@ -13,6 +13,7 @@ export default function MainLayout({ children }: MainLayoutProps) {
     const navigation: NavigationItem[] = [
         { name: 'Home', href: '/', current: url === '/' },
         { name: 'About', href: '/about', current: url === '/about' },
+        { name: 'Experience', href: '/experience', current: url === '/experience' },
         { name: 'Projects', href: '/projects', current: url === '/projects' },
         { name: 'Contact', href: '/contact', current: url === '/contact' },
     ];
