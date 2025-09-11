@@ -22,8 +22,8 @@ export default function SkillsSection({ skills }: SkillsSectionProps) {
                             </h3>
                             <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
                                 {categorySkills.map((skill, index) => (
-                                    <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                                        <div className="flex items-center justify-between">
+                                    <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 flex items-center">
+                                        <div className="flex items-center justify-between w-full">
                                             <div className="items-center space-x-3">
                                                 {skill.logo && (
                                                     <img 

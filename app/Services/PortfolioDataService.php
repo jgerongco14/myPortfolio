@@ -83,37 +83,66 @@ class PortfolioDataService
     public function getSkills(): array
     {
         return [
+            'Languages' => [
+                ['name' => 'Java', 'level' => 85, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg'],
+                ['name' => 'Dart', 'level' => 80, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg'],
+                ['name' => 'JavaScript', 'level' => 95, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'],
+                ['name' => 'PHP', 'level' => 90, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg'],
+                ['name' => 'Python', 'level' => 75, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg'],
+                ['name' => 'TypeScript', 'level' => 85, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'],
+            ],
             'Frontend' => [
                 ['name' => 'React', 'level' => 90, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'],
-                ['name' => 'TypeScript', 'level' => 85, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'],
-                ['name' => 'Vue.js', 'level' => 80, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg'],
-                ['name' => 'JavaScript', 'level' => 95, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'],
-                ['name' => 'CSS3', 'level' => 85, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'],
-                ['name' => 'HTML5', 'level' => 90, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'],
+                ['name' => 'Bootstrap', 'level' => 85, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg'],
+                ['name' => 'HTML5', 'level' => 95, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'],
+                ['name' => 'CSS3', 'level' => 90, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'],
+                ['name' => 'Flutter', 'level' => 80, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg'],
             ],
             'Backend' => [
-                ['name' => 'Laravel', 'level' => 90, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg'],
+                ['name' => 'Laravel', 'level' => 90, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg'],
                 ['name' => 'Node.js', 'level' => 80, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'],
-                ['name' => 'Python', 'level' => 75, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg'],
-                ['name' => 'PHP', 'level' => 90, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg'],
             ],
             'Database' => [
                 ['name' => 'MySQL', 'level' => 85, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg'],
                 ['name' => 'PostgreSQL', 'level' => 80, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg'],
-                ['name' => 'MongoDB', 'level' => 70, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg'],
+                ['name' => 'Appwrite', 'level' => 75, 'logo' => 'https://avatars.githubusercontent.com/u/25017078?s=200&v=4'],
+                ['name' => 'Firebase', 'level' => 85, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg'],
+                ['name' => 'PocketBase', 'level' => 70, 'logo' => 'https://pocketbase.io/images/logo.svg'],
+                ['name' => 'Supabase', 'level' => 75, 'logo' => 'https://avatars.githubusercontent.com/u/54469796?s=200&v=4'],
             ],
             'Tools' => [
                 ['name' => 'Git', 'level' => 90, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg'],
-                ['name' => 'Docker', 'level' => 75, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg'],
-                ['name' => 'AWS', 'level' => 70, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg'],
-                ['name' => 'Linux', 'level' => 80, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg'],
+                ['name' => 'Postman', 'level' => 85, 'logo' => 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg'],
+                ['name' => 'Github', 'level' => 90, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'],
+                ['name' => 'Bitbucket', 'level' => 80, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg'],
+                ['name' => 'Visual Studio Code', 'level' => 95, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg'],
+                ['name' => 'NetBeans', 'level' => 75, 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg'],
+            ],
+            'AI Tools' => [
+                ['name' => 'ChatGPT', 'level' => 90, 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png'],
+                ['name' => 'Cursor', 'level' => 85, 'logo' => 'https://avatars.githubusercontent.com/u/12036746?s=200&v=4'],
+                ['name' => 'Claude AI', 'level' => 80, 'logo' => 'https://pbs.twimg.com/profile_images/1683325383591124992/rZSHO7e0_400x400.jpg'],
             ],
             'Documentation & Design' => [
                 ['name' => 'Trello', 'level' => 85, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg'],
                 ['name' => 'Notion', 'level' => 80, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg'],
-                ['name' => 'Microsoft Office', 'level' => 90, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoft/microsoft-original.svg'],
                 ['name' => 'Canva', 'level' => 75, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg'],
-                ['name' => 'CapCut', 'level' => 70, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/capcut/capcut-original.svg'],
+                ['name' => 'CapCut', 'level' => 70, 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/CapCut_logo.svg/1200px-CapCut_logo.svg.png'],
+            ],
+            'Microsoft Office' => [
+                ['name' => 'Word', 'level' => 90, 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Microsoft_Office_Word_%282019%E2%80%93present%29.svg/1200px-Microsoft_Office_Word_%282019%E2%80%93present%29.svg.png'],
+                ['name' => 'Excel', 'level' => 85, 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/1200px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png'],
+                ['name' => 'PowerPoint', 'level' => 80, 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg/1200px-Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg.png'],
+                ['name' => 'Teams', 'level' => 75, 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Microsoft_Office_Teams_%282018%E2%80%93present%29.svg/1200px-Microsoft_Office_Teams_%282018%E2%80%93present%29.svg.png'],
+            ],
+            'Google Workspace' => [
+                ['name' => 'Google Docs', 'level' => 90, 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Google_Docs_logo_%282014-2020%29.svg/1200px-Google_Docs_logo_%282014-2020%29.svg.png'],
+                ['name' => 'Google Sheets', 'level' => 85, 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Google_Sheets_logo_%282014-2020%29.svg/1200px-Google_Sheets_logo_%282014-2020%29.svg.png'],
+                ['name' => 'Google Forms', 'level' => 80, 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Google_Forms_2020_Logo.svg/1200px-Google_Forms_2020_Logo.svg.png'],
+                ['name' => 'Google Slides', 'level' => 80, 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Google_Slides_logo_%282014-2020%29.svg/1200px-Google_Slides_logo_%282014-2020%29.svg.png'],
+                ['name' => 'Google Classroom', 'level' => 85, 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Google_Classroom_logo.svg/1200px-Google_Classroom_logo.svg.png'],
+                ['name' => 'Google Drive', 'level' => 90, 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Drive_icon_%282020%29.svg/1200px-Google_Drive_icon_%282020%29.svg.png'],
+                ['name' => 'Google Calendar', 'level' => 85, 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/1200px-Google_Calendar_icon_%282020%29.svg.png'],
             ],
         ];
     }
@@ -306,8 +335,7 @@ students from Manila to Davao-based students. The work schedule is only on Sunda
             'location' => 'Davao City, Philippines',
             'social' => [
                 'github' => 'https://github.com/jgerongco14',
-                'linkedin' => 'https://linkedin.com/in/jgerongco',
-                'twitter' => 'https://twitter.com/jgerongco',
+                'linkedin' => 'https://www.linkedin.com/in/rendel-jeff-gerongco-864861242/',
             ],
         ];
     }
