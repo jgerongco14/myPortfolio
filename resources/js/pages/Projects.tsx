@@ -4,12 +4,15 @@ import { ProjectsProps } from "@/types";
 import { Head } from "@inertiajs/react";
 import { useState } from "react";
 
-export default function Projects({ projects, categories }: ProjectsProps) {
-    const [selectedCategory, setSelectedCategory] = useState<string>('All');
+export default function Projects({ projects, platforms }: ProjectsProps) {
+    const [selectedPlatform, setSelectedPlatform] = useState<string>('All');
 
-    const filteredProjects = selectedCategory === 'All' 
+    const filteredProjects = selectedPlatform === 'All' 
         ? projects 
-        : projects.filter(project => project.category === selectedCategory);
+        : projects.filter(project => 
+            project.platform === selectedPlatform || 
+            project.platform.includes(selectedPlatform)
+        );
 
     return (
         <MainLayout>
@@ -28,23 +31,23 @@ export default function Projects({ projects, categories }: ProjectsProps) {
 
                     <div className="mt-8 flex justify-center">
                         <div className="flex space-x-4">
-                            {categories.map((category) => (
+                            {platforms.map((platform) => (
                                 <button
-                                    key={category}
-                                    onClick={() => setSelectedCategory(category)}
+                                    key={platform}
+                                    onClick={() => setSelectedPlatform(platform)}
                                     className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
-                                        selectedCategory === category
+                                        selectedPlatform === platform
                                             ? 'bg-indigo-600 text-white'
                                             : 'bg-white text-gray-700 hover:bg-gray-50'
                                     }`}
                                 >
-                                    {category}
+                                    {platform}
                                 </button>
                             ))}
                         </div>
                     </div>
 
-                    <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-2">
                         {filteredProjects.map((project) => (
                             <ProjectCard key={project.id} project={project} />
                         ))}

@@ -28,23 +28,23 @@ class PortfolioDataService
         return [
             [
                 'id' => 1,
-                'title' => 'E-commerce Platform',
-                'description' => 'Modern e-commerce solution built with Laravel and React',
-                'image' => '/images/project1.jpg',
-                'technologies' => ['Laravel', 'React', 'MySQL'],
-                'category' => 'Full Stack',
-                'github_url' => 'https://github.com/username/project1',
-                'live_url' => 'https://project1.com',
+                'title' => 'ChumSpace',
+                'description' => 'A social networking platform for connecting friends and sharing experiences',
+                'image' => '/assets/projects/chumspace.png',
+                'technologies' => ['React', 'Node.js', 'MongoDB', 'Express'],
+                'platform' => 'Web',
+                'github_url' => null,
+                'live_url' => null,
             ],
             [
                 'id' => 2,
-                'title' => 'Task Management App',
-                'description' => 'Collaborative task management with real-time updates',
-                'image' => '/images/project2.jpg',
-                'technologies' => ['Vue.js', 'Node.js', 'PostgreSQL'],
-                'category' => 'Full Stack',
-                'github_url' => 'https://github.com/username/project2',
-                'live_url' => 'https://project2.com',
+                'title' => 'Guest That Sound',
+                'description' => 'An interactive music guessing game with audio recognition features',
+                'image' => '/assets/projects/guest that sound.png',
+                'technologies' => ['React Native', 'JavaScript', 'Audio API'],
+                'platform' => 'Mobile',
+                'github_url' => null,
+                'live_url' => null,
             ],
         ];
     }
@@ -54,20 +54,60 @@ class PortfolioDataService
         return array_merge($this->getFeaturedProjects(), [
             [
                 'id' => 3,
-                'title' => 'Weather App',
-                'description' => 'Beautiful weather application with location-based forecasts',
-                'image' => '/images/project3.jpg',
-                'technologies' => ['React', 'API Integration'],
-                'category' => 'Frontend',
-                'github_url' => 'https://github.com/username/project3',
-                'live_url' => 'https://project3.com',
+                'title' => 'Coco',
+                'description' => 'A mobile application for tracking and managing personal goals and habits',
+                'image' => '/assets/projects/coco.png',
+                'technologies' => ['React Native', 'Firebase', 'JavaScript'],
+                'platform' => 'Mobile',
+                'github_url' => null,
+                'live_url' => null,
+            ],
+            [
+                'id' => 4,
+                'title' => 'BMI Checker',
+                'description' => 'A desktop application for calculating and tracking Body Mass Index with health recommendations',
+                'image' => '/assets/projects/bmi_checker.png',
+                'technologies' => ['C#', 'WPF', 'SQLite'],
+                'platform' => 'Desktop',
+                'github_url' => null,
+                'live_url' => null,
+            ],
+            [
+                'id' => 5,
+                'title' => 'SpedCademy',
+                'description' => 'An educational platform designed for special education students and teachers',
+                'image' => '/assets/projects/spedcademy.png',
+                'technologies' => ['Laravel', 'Vue.js', 'MySQL', 'Bootstrap'],
+                'platform' => 'Web',
+                'github_url' => null,
+                'live_url' => null,
+            ],
+            [
+                'id' => 6,
+                'title' => 'Pickleball',
+                'description' => 'A mobile app for pickleball players to find courts, schedule games, and track scores',
+                'image' => '/assets/projects/pickleball.png',
+                'technologies' => ['Flutter', 'Dart', 'Firebase'],
+                'platform' => 'Mobile',
+                'github_url' => null,
+                'live_url' => null,
+            ],
+            [
+                'id' => 7,
+                'title' => 'Ayumi',
+                'description' => 'A cross-platform application combining web and mobile features for personal productivity',
+                'image' => '/assets/projects/ayumi.png',
+                'technologies' => ['React', 'React Native', 'Node.js', 'PostgreSQL'],
+                'platform' => 'Web, Mobile',
+                'github_url' => null,
+                'live_url' => null,
             ],
         ]);
     }
 
-    public function getProjectCategories(): array
+    public function getProjectPlatforms(): array
     {
-        return ['All', 'Frontend', 'Backend', 'Full Stack'];
+        return ['All', 'Web', 'Mobile', 'Desktop'];
     }
 
     public function getPersonalInfo(): array

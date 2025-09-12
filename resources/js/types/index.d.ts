@@ -29,7 +29,7 @@ export interface Project {
     description: string;
     image?: string;
     technologies: string[];
-    category: string;
+    platform: string;
     github_url?: string;
     live_url?: string;
 }
@@ -112,7 +112,7 @@ export interface ExperienceProps extends PageProps {
 
 export interface ProjectsProps extends PageProps {
     projects: Project[];
-    categories: string[];
+    platforms: string[];
 }
 
 export interface ContactProps extends PageProps {

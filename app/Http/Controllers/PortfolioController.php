@@ -44,7 +44,7 @@ class PortfolioController extends Controller
     {
         return Inertia::render('Projects', [
             'projects' => $this->portfolioService->getAllProjects(),
-            'categories' => $this->portfolioService->getProjectCategories(),
+            'platforms' => $this->portfolioService->getProjectPlatforms(),
         ]);
     }
 
