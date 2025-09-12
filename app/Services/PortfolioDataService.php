@@ -143,7 +143,7 @@ class PortfolioDataService
             'Languages' => [
                 ['name' => 'Java', 'level' => 85, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg'],
                 ['name' => 'Dart', 'level' => 85, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg'],
-                ['name' => 'JavaScript', 'level' => 50, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'],
+                ['name' => 'JavaScript', 'level' => 85, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'],
                 ['name' => 'PHP', 'level' => 90, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg'],
                 ['name' => 'Python', 'level' => 80, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg'],
                 ['name' => 'TypeScript', 'level' => 80, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'],

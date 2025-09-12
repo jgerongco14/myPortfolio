@@ -1,7 +1,7 @@
 import MainLayout from "@/layouts/MainLayout";
 import { ContactProps, ContactFormData } from "@/types";
 import { useForm, Head } from "@inertiajs/react";
-import { FormEventHandler } from "react";
+import { FormEventHandler, useState } from "react";
 
 export default function Contact({ contact_info }: ContactProps) {
     const { data, setData, post, processing, errors, reset } = useForm<ContactFormData>({
@@ -10,11 +10,21 @@ export default function Contact({ contact_info }: ContactProps) {
         subject: '',
         message: '',
     });
+    const [blankErrors, setBlankErrors] = useState<{[key: string]: string}>({});
 
     const submit: FormEventHandler = (e) => {
         e.preventDefault();
+        let newBlankErrors: any = {};
+        if (!data.name.trim()) newBlankErrors.name = 'Name is required.';
+        if (!data.email.trim()) newBlankErrors.email = 'Email is required.';
+        if (!data.subject.trim()) newBlankErrors.subject = 'Subject is required.';
+        if (!data.message.trim()) newBlankErrors.message = 'Message is required.';
+        setBlankErrors(newBlankErrors);
+        if (Object.keys(newBlankErrors).length > 0) {
+            return;
+        }
         post(route('contact.send'), {
-            onSuccess: () => reset(),
+            onSuccess: () => { reset(); setBlankErrors({}); },
         });
     };
 
@@ -64,7 +74,7 @@ export default function Contact({ contact_info }: ContactProps) {
                                         rel="noopener noreferrer"
                                         className="text-gray-400 hover:text-gray-500"
                                     >
-                                        GitHub
+                                        <img src="/assets/tools_logo/github.png" alt="GitHub" className="w-10 h-10 inline rounded border-2 border-gray-400 p-1 bg-white" />
                                     </a>
                                     <a
                                         href={contact_info.social.linkedin}
@@ -72,15 +82,15 @@ export default function Contact({ contact_info }: ContactProps) {
                                         rel="noopener noreferrer"
                                         className="text-gray-400 hover:text-gray-500"
                                     >
-                                        LinkedIn
+                                        <img src="/assets/tools_logo/linkedin.png" alt="LinkedIn" className="w-10 h-10 inline rounded border-2 border-gray-400 p-1 bg-white" />
                                     </a>
                                     <a
-                                        href={contact_info.social.twitter}
+                                        href={`https://mail.google.com/mail/?view=cm&fs=1&to=${contact_info.email}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="text-gray-400 hover:text-gray-500"
                                     >
-                                        Twitter
+                                        <img src="/assets/tools_logo/gmail.png" alt="Gmail" className="w-13 h-10 inline rounded border-2 border-gray-400 p-1 bg-white" />
                                     </a>
                                 </div>
                             </div>
@@ -97,10 +107,10 @@ export default function Contact({ contact_info }: ContactProps) {
                                         id="name"
                                         value={data.name}
                                         onChange={(e) => setData('name', e.target.value)}
-                                        className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                                        className="mt-1 block w-full border-2 border-gray-400 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 min-h-[48px]"
                                         required
                                     />
-                                    {errors.name && <div className="text-red-600 text-sm mt-1">{errors.name}</div>}
+                                    {(blankErrors.name || errors.name) && <div className="text-red-600 text-sm mt-1">{blankErrors.name || errors.name}</div>}
                                 </div>
 
                                 <div>
@@ -112,10 +122,10 @@ export default function Contact({ contact_info }: ContactProps) {
                                         id="email"
                                         value={data.email}
                                         onChange={(e) => setData('email', e.target.value)}
-                                        className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                                        className="mt-1 block w-full border-2 border-gray-400 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 min-h-[48px]"
                                         required
                                     />
-                                    {errors.email && <div className="text-red-600 text-sm mt-1">{errors.email}</div>}
+                                    {(blankErrors.email || errors.email) && <div className="text-red-600 text-sm mt-1">{blankErrors.email || errors.email}</div>}
                                 </div>
 
                                 <div>
@@ -127,10 +137,10 @@ export default function Contact({ contact_info }: ContactProps) {
                                         id="subject"
                                         value={data.subject}
                                         onChange={(e) => setData('subject', e.target.value)}
-                                        className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                                        className="mt-1 block w-full border-2 border-gray-400 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 min-h-[48px]"
                                         required
                                     />
-                                    {errors.subject && <div className="text-red-600 text-sm mt-1">{errors.subject}</div>}
+                                    {(blankErrors.subject || errors.subject) && <div className="text-red-600 text-sm mt-1">{blankErrors.subject || errors.subject}</div>}
                                 </div>
 
                                 <div>
@@ -139,13 +149,13 @@ export default function Contact({ contact_info }: ContactProps) {
                                     </label>
                                     <textarea
                                         id="message"
-                                        rows={4}
+                                        rows={3}
                                         value={data.message}
                                         onChange={(e) => setData('message', e.target.value)}
-                                        className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                                        className="mt-1 block w-full border-2 border-gray-400 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 min-h-[120px]"
                                         required
                                     />
-                                    {errors.message && <div className="text-red-600 text-sm mt-1">{errors.message}</div>}
+                                    {(blankErrors.message || errors.message) && <div className="text-red-600 text-sm mt-1">{blankErrors.message || errors.message}</div>}
                                 </div>
 
                                 <div>
