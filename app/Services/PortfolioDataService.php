@@ -162,7 +162,7 @@ class PortfolioDataService
             'Database' => [
                 ['name' => 'MySQL', 'level' => 85, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg'],
                 ['name' => 'PostgreSQL', 'level' => 80, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg'],
-                ['name' => 'Appwrite', 'level' => 75, 'logo' => 'https://avatars.githubusercontent.com/u/25017078?s=200&v=4'],
+                ['name' => 'Appwrite', 'level' => 75, 'logo' => 'https://media.licdn.com/dms/image/v2/D4E0BAQFDBF46ZfJ3vQ/company-logo_200_200/company-logo_200_200/0/1718977410336/appwrite_logo?e=2147483647&v=beta&t=DoHqWw2l_PyS4_tTjcR6VXJWgBSKTLGdIw5rtLbuH3s'],
                 ['name' => 'Firebase', 'level' => 85, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg'],
                 ['name' => 'PocketBase', 'level' => 70, 'logo' => 'https://pocketbase.io/images/logo.svg'],
                 ['name' => 'Supabase', 'level' => 75, 'logo' => 'https://avatars.githubusercontent.com/u/54469796?s=200&v=4'],
@@ -177,14 +177,14 @@ class PortfolioDataService
             ],
             'AI Tools' => [
                 ['name' => 'ChatGPT', 'level' => 90, 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png'],
-                ['name' => 'Cursor', 'level' => 85, 'logo' => 'https://avatars.githubusercontent.com/u/12036746?s=200&v=4'],
-                ['name' => 'Claude AI', 'level' => 80, 'logo' => 'https://pbs.twimg.com/profile_images/1683325383591124992/rZSHO7e0_400x400.jpg'],
+                ['name' => 'Cursor', 'level' => 85, 'logo' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrQ_CU3a6muH84mLfoP6xmM4ZJ9Z6RAXMmdA&s'],
+                ['name' => 'Claude AI', 'level' => 80, 'logo' => '/assets/tools_logo/claude.svg'],
             ],
             'Documentation & Design' => [
                 ['name' => 'Trello', 'level' => 85, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg'],
                 ['name' => 'Notion', 'level' => 80, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg'],
                 ['name' => 'Canva', 'level' => 75, 'logo' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg'],
-                ['name' => 'CapCut', 'level' => 70, 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/CapCut_logo.svg/1200px-CapCut_logo.svg.png'],
+                ['name' => 'CapCut', 'level' => 70, 'logo' => 'https://static.vecteezy.com/system/resources/previews/067/065/640/non_2x/capcut-logo-square-rounded-capcut-logo-capcut-logo-free-download-free-png.png'],
             ],
             'Microsoft Office' => [
                 ['name' => 'Word', 'level' => 90, 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Microsoft_Office_Word_%282019%E2%80%93present%29.svg/1200px-Microsoft_Office_Word_%282019%E2%80%93present%29.svg.png'],
@@ -197,7 +197,7 @@ class PortfolioDataService
                 ['name' => 'Google Sheets', 'level' => 85, 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Google_Sheets_logo_%282014-2020%29.svg/1200px-Google_Sheets_logo_%282014-2020%29.svg.png'],
                 ['name' => 'Google Forms', 'level' => 80, 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Google_Forms_2020_Logo.svg/1200px-Google_Forms_2020_Logo.svg.png'],
                 ['name' => 'Google Slides', 'level' => 80, 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Google_Slides_logo_%282014-2020%29.svg/1200px-Google_Slides_logo_%282014-2020%29.svg.png'],
-                ['name' => 'Google Classroom', 'level' => 85, 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Google_Classroom_logo.svg/1200px-Google_Classroom_logo.svg.png'],
+                ['name' => 'Google Classroom', 'level' => 85, 'logo' => 'https://www.gstatic.com/classroom/logo_square_rounded.svg'],
                 ['name' => 'Google Drive', 'level' => 90, 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Drive_icon_%282020%29.svg/1200px-Google_Drive_icon_%282020%29.svg.png'],
                 ['name' => 'Google Calendar', 'level' => 85, 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/1200px-Google_Calendar_icon_%282020%29.svg.png'],
             ],
