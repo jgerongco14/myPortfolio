@@ -13,7 +13,7 @@ export default defineConfig({
         }),
         react(),
         tailwindcss(),
-        wayfinder(),
+        ...(process.env.NODE_ENV !== 'production' ? [wayfinder()] : []),
     ],
     esbuild: {
         jsx: 'automatic',
