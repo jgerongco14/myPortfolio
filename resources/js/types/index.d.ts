@@ -27,6 +27,7 @@ export interface Project {
     id: number;
     title: string;
     description: string;
+    fullDescription?: string;
     image?: string;
     technologies: string[];
     platform: string;
@@ -97,6 +98,7 @@ export interface PageProps {
 export interface HomeProps extends PageProps {
     hero: HeroData;
     career: CareerData;
+    featuredProjects: Project[];
 }
 
 export interface AboutProps extends PageProps {

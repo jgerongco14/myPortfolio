@@ -20,6 +20,7 @@ class PortfolioController extends Controller
         return Inertia::render('Home', [
             'hero' => $this->portfolioService->getHeroData(),
             'career' => $this->portfolioService->getCareerData(),
+            'featuredProjects' => $this->portfolioService->getFeaturedProjects(),
         ]);
     }
 

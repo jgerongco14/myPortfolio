@@ -1,5 +1,4 @@
 import { Project } from "@/types";
-import { Link } from "lucide-react";
 import ProjectCard from "./ProjectCard";
 
 interface FeaturedProjectsProps {
@@ -18,20 +17,18 @@ export default function FeaturedProjects({ projects }: FeaturedProjectsProps) {
                         Some of my recent work
                     </p>
                 </div>
-                
                 <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-2">
                     {projects.map((project) => (
                         <ProjectCard key={project.id} project={project} />
                     ))}
                 </div>
-                
                 <div className="mt-12 text-center">
-                    <Link
-                        href="/projects"
-                        className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 transition-colors"
+                    <button
+                        className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 transition-colors mx-auto"
+                        onClick={() => window.location.href = '/projects'}
                     >
-                        View All Projects
-                    </Link>
+                        See More
+                    </button>
                 </div>
             </div>
         </div>
