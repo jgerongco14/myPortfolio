@@ -51,16 +51,16 @@ class PortfolioController extends Controller
 
     public function contact(): Response
     {
-        return Inertia::render('Contact', [
+        return Inertia::render('ContactSimple', [
             'contact_info' => $this->portfolioService->getContactInfo(),
         ]);
     }
 
-    public function sendMessage(ContactRequest $request): RedirectResponse
-    {
-        // Handle contact form submission
-        // You can integrate with email service, database, etc.
+    // public function sendMessage(ContactRequest $request): RedirectResponse
+    // {
+    //     // Handle contact form submission
+    //     // You can integrate with email service, database, etc.
 
-        return redirect()->back()->with('success', 'Message sent successfully!');
-    }
+    //     return redirect()->back()->with('success', 'Message sent successfully!');
+    // }
 }
