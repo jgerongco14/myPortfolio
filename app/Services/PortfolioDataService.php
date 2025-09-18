@@ -57,8 +57,8 @@ class PortfolioDataService
             [
                 'id' => 3,
                 'title' => 'Coco',
-                'description' => 'Converted a classmate’s web project into a mobile-friendly Flutter app, improving accessibility. Later continued by others, COCO is now an active startup with SEC registration and IP rights.',
-                'fullDescription' => 'COCO is a capstone project originally created as a website by one of my classmates. During our On-the-Job Training (OJT), I was tasked with converting the web design into a mobile-friendly interface using Flutter, focusing on front-end development to improve accessibility across mobile platforms. The application has since been continued by the succeeding batch of 4th-year students, who graduated in April 2025. They successfully pushed COCO as a startup product, and it is now in active production, officially registered with the SEC and backed by intellectual property (IP) rights.',
+                'description' => 'Converted a classmate’s Flutter app into a mobile-friendly Web app, improving accessibility. Later continued by others, COCO is now an active startup with SEC registration and IP rights.',
+                'fullDescription' => 'COCO is a capstone project originally created as a flutter application by a group of classmates. During our On-the-Job Training (OJT), I was tasked to improved the user interface using the new design created by our designer on figma and continue with Flutter, focusing on front-end development to improve accessibility across mobile and desktop platforms. The application has since been continued by the succeeding batch of 4th-year students, who graduated in April 2025 and converting it from flutter project to web-based project. They successfully pushed COCO as a startup product, and it is now in active production, officially registered with the SEC and backed by intellectual property (IP) rights.',
                 'image' => '/assets/projects/coco.png',
                 'technologies' => ['Flutter', 'Dart', 'Firebase'],
                 'platform' => 'Mobile, Desktop',
